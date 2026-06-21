@@ -28,11 +28,9 @@
   </a>
 </p>
 
-
-
-
-
-
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=PietroTamanini&label=PROFILE+VIEWS&style=for-the-badge&color=0D1117&abbreviated=true" alt="Profile views" />
+</p>
 
 ---
 
