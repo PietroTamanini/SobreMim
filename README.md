@@ -115,16 +115,18 @@ Internal validation flow using PHP, Flask, Playwright and MySQL to consult, proc
 ## GitHub Activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=PietroTamanini&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" alt="GitHub Stats" />
-  <img height="165" src="https://streak-stats.demolab.com?user=PietroTamanini&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
+  <img
+    height="180"
+    src="https://streak-stats.demolab.com?user=PietroTamanini&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D"
+    alt="GitHub Streak"
+  />
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PietroTamanini&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Most Used Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PietroTamanini&theme=github-compact&hide_border=true&area=true" alt="GitHub Contribution Graph" />
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=PietroTamanini&theme=github-compact&hide_border=true&area=true&custom_title=Pietro%20Tamanini's%20Contribution%20Graph"
+    alt="GitHub Contribution Graph"
+  />
 </p>
 
 ---
