@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pietro.tamanini.dev.br/sitemap.xml
