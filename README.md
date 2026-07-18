@@ -1,58 +1,105 @@
-# Portfólio — Pietro Tamanini
+# Pietro Tamanini
 
-Portfólio estático desenvolvido com HTML, CSS e JavaScript puros.
+```console
+pietro@dev:~$ whoami
+Backend Developer · Python · PHP · Flask · REST APIs · MySQL · Docker · Linux
+```
 
-## Estrutura
+Desenvolvo sistemas web, APIs e automações com foco em regras de negócio, bancos de dados, segurança, testes e implantação.
+
+[Portfólio](https://pietro.tamanini.dev.br/) · [LinkedIn](https://www.linkedin.com/in/pietrotamanini/) · [E-mail](mailto:pietro@tamanini.dev.br)
+
+## `projects/`
+
+### [JusTraduz](https://github.com/TeamGHCP/JusTraduz)
+
+Plataforma jurídica desenvolvida em equipe para análise de documentos, gestão de casos, comunicação entre usuários, consulta processual e integração de pagamentos.
 
 ```text
-.
-├── index.html
-├── 404.html
-├── assets/
-│   ├── css/style.css
-│   ├── js/main.js
-│   └── img/
-├── robots.txt
-├── sitemap.xml
-├── site.webmanifest
-└── .htaccess
+PHP · MySQL · JavaScript · Docker · APIs · Asaas
 ```
 
-## Executar localmente
+Atuação em backend, integrações, banco de dados, segurança, infraestrutura e evolução do produto.
 
-```bash
-python -m http.server 8000
-```
+- autenticação e controle de acesso por perfis;
+- auditoria, proteção CSRF, rate limiting e armazenamento privado;
+- processamento de documentos e filas de execução;
+- pagamentos, cobranças e fluxos administrativos;
+- ambiente Docker, testes e documentação operacional.
 
-Acesse `http://localhost:8000`.
+> 1º lugar na apresentação da Situação de Aprendizagem de Software do SENAI/SC.
 
-## Publicação
+### [Zokyo](https://github.com/PietroTamanini/Zokyo)
 
-Envie todo o conteúdo desta pasta para a raiz pública de `pietro.tamanini.dev.br`.
-
-O arquivo `.htaccess` configura segurança básica, cache, compressão e uma página 404 que mantém o status HTTP correto. Em hospedagens que não usam Apache, configure a página `404.html` no painel da plataforma.
-
-## Validações aplicadas
-
-- HTML, CSS, JavaScript, JSON e XML verificados;
-- navegação mobile e por teclado testada;
-- abas do editor, projetos expansíveis e cópia de e-mail testados;
-- verificação de overflow em telas de 320 px a 1440 px;
-- recursos locais e página 404 verificados.
-
-## Antes de publicar
-
-- confirme o endereço de e-mail profissional;
-- confirme os links de GitHub e LinkedIn;
-- mantenha `canonical`, `robots.txt` e `sitemap.xml` apontando para o domínio final;
-- limpe o cache da CDN após substituir uma versão anterior.
-
-## Currículo
-
-Coloque o PDF nesta localização exata:
+Sistema de gestão para assistências técnicas com ordens de serviço, clientes, estoque, financeiro, laudos, relatórios e portal do cliente.
 
 ```text
-docs/desenvolvedor back end.pdf
+Python · Flask · SQLAlchemy · MariaDB · Docker · Pytest · Playwright
 ```
 
-Os botões do hero, da seção de currículo e do contato já apontam para esse arquivo.
+- arquitetura modular com blueprints e camada de serviços;
+- modelagem relacional e migrations com Alembic;
+- autenticação, RBAC, 2FA e auditoria;
+- testes unitários e end-to-end;
+- Gunicorn, Nginx, Docker Compose e health checks.
+
+### [API Consulta OAB/CNA](https://github.com/PietroTamanini/API-consulta-OAB)
+
+Integração entre interface PHP e API Flask para consulta automatizada de registros públicos, com cache e persistência em MySQL.
+
+```text
+Python · Flask · PHP · Playwright · MySQL · REST API
+```
+
+## `stack.yml`
+
+```yaml
+backend:
+  - Python
+  - PHP
+  - Flask
+  - REST APIs
+  - autenticação
+  - RBAC
+
+data:
+  - MySQL
+  - MariaDB
+  - SQLAlchemy
+  - Alembic
+  - PDO
+
+infra:
+  - Linux
+  - Docker
+  - Docker Compose
+  - Nginx
+  - Gunicorn
+
+quality:
+  - Pytest
+  - Playwright
+  - Ruff
+  - GitHub Actions
+
+security:
+  - CSRF
+  - rate limiting
+  - 2FA
+  - auditoria
+  - gestão de segredos
+```
+
+## `git log`
+
+```text
+7480422  1º lugar — Situação de Aprendizagem de Software, SENAI/SC
+main     Análise e Desenvolvimento de Sistemas — SENAI/SC
+HEAD     Backend, arquitetura, testes, segurança e Linux
+```
+
+```console
+pietro@dev:~$ ./contact.sh
+email     pietro@tamanini.dev.br
+location  Joinville, Santa Catarina
+```
