@@ -106,20 +106,37 @@
   };
 
   const sections = $$('main section[id]');
+  let navigationFrame = 0;
+
+  const getActiveSectionId = () => {
+    if (!sections.length) return '';
+
+    const headerOffset = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 0;
+    const activationLine = window.scrollY + headerOffset + Math.min(window.innerHeight * 0.28, 220);
+    let activeId = sections[0].id;
+
+    sections.forEach((section) => {
+      if (section.offsetTop <= activationLine) activeId = section.id;
+    });
+
+    return activeId;
+  };
+
+  const updateActiveNavigation = () => {
+    navigationFrame = 0;
+    setActiveNavigation(getActiveSectionId());
+  };
+
+  const requestNavigationUpdate = () => {
+    if (navigationFrame) return;
+    navigationFrame = window.requestAnimationFrame(updateActiveNavigation);
+  };
+
   reveals.forEach((item, index) => {
     item.style.setProperty('--reveal-delay', `${(index % 3) * 55}ms`);
   });
 
   if ('IntersectionObserver' in window) {
-    const sectionObserver = new IntersectionObserver((entries) => {
-      const active = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (active) setActiveNavigation(active.target.id);
-    }, { rootMargin: '-24% 0px -60%', threshold: [0.01, 0.12, 0.25] });
-
-    sections.forEach((section) => sectionObserver.observe(section));
-
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
@@ -642,7 +659,10 @@
 
   window.addEventListener('scroll', requestProgressUpdate, { passive: true });
   window.addEventListener('resize', requestProgressUpdate);
+  window.addEventListener('scroll', requestNavigationUpdate, { passive: true });
+  window.addEventListener('resize', requestNavigationUpdate);
   updateProgress();
+  updateActiveNavigation();
 
   if (currentYear) currentYear.textContent = String(new Date().getFullYear());
 })();

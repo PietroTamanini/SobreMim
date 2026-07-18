@@ -156,11 +156,15 @@ button { color: inherit; font: inherit; }
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 14px;
 }
 
 .main-nav a {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 6px;
   color: var(--muted);
   font: .76rem var(--mono);
   transition: color .16s ease;
@@ -180,8 +184,11 @@ button { color: inherit; font: inherit; }
 }
 
 .main-nav a:hover,
+.main-nav a:focus-visible,
 .main-nav a.active,
 .main-nav a[aria-current="location"] { color: var(--blue); }
+.main-nav a:hover::after,
+.main-nav a:focus-visible::after,
 .main-nav a.active::after,
 .main-nav a[aria-current="location"]::after { transform: scaleX(1); }
 
