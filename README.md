@@ -1,26 +1,6 @@
 # Portfólio — Pietro Tamanini
 
-Portfólio estático em HTML, CSS e JavaScript puros, com estética de terminal/editor e interações acessíveis.
-
-## Executar localmente
-
-```bash
-python -m http.server 8000
-```
-
-Acesse `http://localhost:8000`.
-
-## Interações
-
-- editor com três arquivos e linhas que aceitam breakpoints;
-- botão `run` e atalho `Ctrl + Enter`;
-- terminal funcional com comandos como `help`, `whoami`, `projects`, `stack`, `contact` e `filter`;
-- `/` ou `Ctrl + \`` abre o terminal;
-- `Ctrl + K` abre a paleta de comandos;
-- filtros de projetos por Python, PHP e Docker;
-- detalhes dos projetos com abertura exclusiva e animação;
-- navegação, abas, terminal e paleta utilizáveis por teclado;
-- animações desativadas quando `prefers-reduced-motion` está ativo.
+Portfólio estático desenvolvido com HTML, CSS e JavaScript puros.
 
 ## Estrutura
 
@@ -38,17 +18,41 @@ Acesse `http://localhost:8000`.
 └── .htaccess
 ```
 
+## Executar localmente
+
+```bash
+python -m http.server 8000
+```
+
+Acesse `http://localhost:8000`.
+
 ## Publicação
 
-Envie todo o conteúdo da pasta para a raiz pública de `pietro.tamanini.dev.br`.
+Envie todo o conteúdo desta pasta para a raiz pública de `pietro.tamanini.dev.br`.
 
-O `.htaccess` inclui cache, compressão, cabeçalhos básicos de segurança e página 404 com status HTTP correto. Em hospedagens sem Apache, configure `404.html` na plataforma.
+O arquivo `.htaccess` configura segurança básica, cache, compressão e uma página 404 que mantém o status HTTP correto. Em hospedagens que não usam Apache, configure a página `404.html` no painel da plataforma.
 
-## Validação
+## Validações aplicadas
 
-- JavaScript verificado com Node;
-- interações testadas no Chromium em desktop e celular;
-- editor, terminal, comandos, filtros, detalhes e atalhos verificados;
-- ausência de overflow horizontal em 375 px e 1440 px;
-- transição do mouse entre Zokyo e API sem alteração visual no card;
-- referências locais verificadas.
+- HTML, CSS, JavaScript, JSON e XML verificados;
+- navegação mobile e por teclado testada;
+- abas do editor, projetos expansíveis e cópia de e-mail testados;
+- verificação de overflow em telas de 320 px a 1440 px;
+- recursos locais e página 404 verificados.
+
+## Antes de publicar
+
+- confirme o endereço de e-mail profissional;
+- confirme os links de GitHub e LinkedIn;
+- mantenha `canonical`, `robots.txt` e `sitemap.xml` apontando para o domínio final;
+- limpe o cache da CDN após substituir uma versão anterior.
+
+## Currículo
+
+Coloque o PDF nesta localização exata:
+
+```text
+docs/desenvolvedor back end.pdf
+```
+
+Os botões do hero, da seção de currículo e do contato já apontam para esse arquivo.

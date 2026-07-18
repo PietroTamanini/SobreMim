@@ -304,7 +304,7 @@
 
   const terminalCommands = {
     help: () => [
-      'commands: help, whoami, about, projects, stack, contact, pwd, clear',
+      'commands: help, whoami, about, projects, stack, cv, contact, pwd, clear',
       'open: github, linkedin, justraduz, zokyo, oab',
       'filters: filter all | python | php | docker'
     ],
@@ -317,10 +317,14 @@
       scrollToSection('#projects');
       return ['JusTraduz/', 'Zokyo/', 'API-consulta-OAB/'];
     },
-    ls: () => ['about/', 'projects/', 'stack.yml', 'git.log', 'contact.sh'],
+    ls: () => ['about/', 'projects/', 'stack.yml', 'git.log', 'docs/desenvolvedor back end.pdf', 'contact.sh'],
     stack: () => {
       scrollToSection('#stack');
       return ['backend: Python, PHP, Flask, REST APIs', 'data: MySQL, MariaDB, SQLAlchemy', 'infra: Docker, Linux, Nginx, Gunicorn'];
+    },
+    cv: () => {
+      scrollToSection('#cv');
+      return ['docs/desenvolvedor back end.pdf', 'use the download button to save the file'];
     },
     contact: () => {
       scrollToSection('#contact');

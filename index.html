@@ -32,7 +32,7 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <script>document.documentElement.classList.add("js");</script>
-  <link rel="stylesheet" href="assets/css/style.css?v=20260718-interactive">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260718-cv">
 
   <script type="application/ld+json">
   {
@@ -78,6 +78,7 @@
         <a href="#projects">./projects</a>
         <a href="#stack">./stack</a>
         <a href="#log">./log</a>
+        <a href="#cv">./cv</a>
         <a href="#contact">./contact</a>
       </nav>
     </div>
@@ -97,6 +98,7 @@
 
           <div class="hero-actions">
             <a class="button primary" href="#projects"><span>$</span> ls projects/</a>
+            <a class="button" href="docs/desenvolvedor%20back%20end.pdf" download="Curriculo-Pietro-Tamanini-Backend.pdf"><span>$</span> download cv</a>
             <a class="button" href="https://github.com/PietroTamanini" target="_blank" rel="me noopener noreferrer">github ↗</a>
             <a class="button" href="https://www.linkedin.com/in/pietrotamanini/" target="_blank" rel="me noopener noreferrer">linkedin ↗</a>
           </div>
@@ -111,19 +113,15 @@
           <div class="workspace-titlebar">
             <div class="editor-dots" aria-hidden="true"><span></span><span></span><span></span></div>
             <span>pietro — backend</span>
-            <div class="workspace-actions">
-              <button class="workspace-command" type="button" data-command-palette aria-label="Abrir atalhos e comandos">ctrl k</button>
-              <button class="workspace-run" type="button" data-run-editor title="Executar arquivo ativo (Ctrl + Enter)"><span aria-hidden="true">▶</span> run</button>
-              <span class="workspace-branch">main*</span>
-            </div>
+            <span class="workspace-branch">main*</span>
           </div>
 
           <div class="workspace-main">
-            <aside class="workspace-sidebar" aria-label="Atalhos do editor">
-              <button class="sidebar-icon active" type="button" data-sidebar-file="profile" title="Abrir profile.json" aria-label="Abrir profile.json">{ }</button>
-              <button class="sidebar-icon" type="button" data-sidebar-file="api" title="Abrir api.http" aria-label="Abrir api.http">⇄</button>
-              <button class="sidebar-icon" type="button" data-sidebar-file="docker" title="Abrir compose.yml" aria-label="Abrir compose.yml">◇</button>
-              <button class="sidebar-icon terminal-icon" type="button" data-terminal-toggle title="Abrir terminal (Ctrl + `)" aria-label="Abrir terminal">›_</button>
+            <aside class="workspace-sidebar" aria-hidden="true">
+              <span class="sidebar-icon active">⌘</span>
+              <span class="sidebar-icon">⌕</span>
+              <span class="sidebar-icon">⑂</span>
+              <span class="sidebar-icon">□</span>
             </aside>
 
             <div class="workspace-editor">
@@ -175,24 +173,6 @@
                 </ol>
               </div>
             </div>
-          </div>
-
-          <div class="workspace-terminal" data-workspace-terminal aria-hidden="true">
-            <div class="terminal-toolbar">
-              <span>TERMINAL</span>
-              <span class="terminal-shortcut">ctrl + `</span>
-              <button type="button" data-terminal-close aria-label="Fechar terminal">×</button>
-            </div>
-            <div class="terminal-output" id="terminal-output" aria-live="polite" aria-atomic="false">
-              <p><span class="terminal-prompt">pietro@dev:~$</span> <span>type <code>help</code> to list commands</span></p>
-            </div>
-            <form class="terminal-form" data-terminal-form autocomplete="off">
-              <label for="terminal-input" class="sr-only">Comando do terminal</label>
-              <span class="terminal-prompt" aria-hidden="true">pietro@dev:~$</span>
-              <input id="terminal-input" name="command" type="text" inputmode="text" spellcheck="false" autocapitalize="off" placeholder="help" aria-describedby="terminal-hint">
-              <button type="submit">run</button>
-            </form>
-            <p class="terminal-hint" id="terminal-hint">Atalhos: / abre o terminal · Ctrl+Enter executa o arquivo · Ctrl+K abre comandos</p>
           </div>
 
           <div class="editor-status" aria-live="polite">
@@ -271,18 +251,8 @@
             <a class="plain-link" href="https://github.com/PietroTamanini?tab=repositories" target="_blank" rel="noopener noreferrer">todos os repositórios ↗</a>
           </div>
 
-          <div class="project-toolbar">
-            <div class="project-filters" role="group" aria-label="Filtrar projetos por tecnologia">
-              <button class="project-filter active" type="button" data-project-filter="all" aria-pressed="true">all</button>
-              <button class="project-filter" type="button" data-project-filter="python" aria-pressed="false">python</button>
-              <button class="project-filter" type="button" data-project-filter="php" aria-pressed="false">php</button>
-              <button class="project-filter" type="button" data-project-filter="docker" aria-pressed="false">docker</button>
-            </div>
-            <p class="project-count" aria-live="polite"><span id="project-count">3</span> repositories</p>
-          </div>
-
           <div class="repo-list">
-            <article class="repo-item featured" data-project-stack="php mysql docker javascript">
+            <article class="repo-item featured">
               <div class="repo-index">01</div>
               <div class="repo-main">
                 <div class="repo-header">
@@ -327,7 +297,7 @@
               </div>
             </article>
 
-            <article class="repo-item" data-project-stack="python flask mariadb docker playwright">
+            <article class="repo-item">
               <div class="repo-index">02</div>
               <div class="repo-main">
                 <div class="repo-header">
@@ -374,7 +344,7 @@ migrations/</code></pre>
               </div>
             </article>
 
-            <article class="repo-item" data-project-stack="python php flask playwright mysql">
+            <article class="repo-item">
               <div class="repo-index">03</div>
               <div class="repo-main">
                 <div class="repo-header">
@@ -518,10 +488,50 @@ migrations/</code></pre>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
+
+    <section class="section cv-section" id="cv">
       <div class="container section-grid">
         <header class="section-label reveal">
           <span>05</span>
+          <p>resume.pdf</p>
+        </header>
+
+        <div class="section-content reveal">
+          <p class="command"><span>pietro@dev</span>:~$ stat docs/desenvolvedor\ back\ end.pdf</p>
+
+          <article class="cv-card">
+            <div class="cv-file" aria-hidden="true">
+              <span class="cv-file-type">PDF</span>
+              <span class="cv-file-lines"></span>
+              <span class="cv-file-lines short"></span>
+              <span class="cv-file-lines"></span>
+            </div>
+
+            <div class="cv-copy">
+              <span class="cv-eyebrow">currículo profissional</span>
+              <h2>Conheça minha experiência em detalhes.</h2>
+              <p>Formação, competências técnicas, projetos e informações profissionais reunidos em um único documento.</p>
+
+              <div class="cv-meta" aria-label="Informações do currículo">
+                <span><strong>formato</strong> PDF</span>
+                <span><strong>foco</strong> Backend</span>
+                <span><strong>idioma</strong> PT-BR</span>
+              </div>
+
+              <div class="cv-actions">
+                <a class="button primary" href="docs/desenvolvedor%20back%20end.pdf" download="Curriculo-Pietro-Tamanini-Backend.pdf"><span>$</span> download cv</a>
+                <a class="button" href="docs/desenvolvedor%20back%20end.pdf" target="_blank" rel="noopener noreferrer">open pdf ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container section-grid">
+        <header class="section-label reveal">
+          <span>06</span>
           <p>contact.sh</p>
         </header>
 
@@ -536,6 +546,7 @@ migrations/</code></pre>
             <div><span>email</span><a href="mailto:pietro@tamanini.dev.br">pietro@tamanini.dev.br</a><code>↵</code></div>
             <div><span>github</span><a href="https://github.com/PietroTamanini" target="_blank" rel="me noopener noreferrer">github.com/PietroTamanini</a><code>↗</code></div>
             <div><span>linkedin</span><a href="https://www.linkedin.com/in/pietrotamanini/" target="_blank" rel="me noopener noreferrer">linkedin.com/in/pietrotamanini</a><code>↗</code></div>
+            <div><span>currículo</span><a href="docs/desenvolvedor%20back%20end.pdf" download="Curriculo-Pietro-Tamanini-Backend.pdf">download PDF</a><code>↓</code></div>
             <div><span>location</span><p>Joinville, Santa Catarina</p><code>BR</code></div>
           </div>
 
@@ -555,29 +566,7 @@ migrations/</code></pre>
     </div>
   </footer>
 
-  <div class="command-palette" data-command-dialog role="dialog" aria-modal="true" aria-labelledby="command-title" aria-hidden="true">
-    <button class="command-backdrop" type="button" data-command-close tabindex="-1" aria-label="Fechar comandos"></button>
-    <div class="command-box">
-      <div class="command-search-row">
-        <span aria-hidden="true">›</span>
-        <label class="sr-only" for="command-search">Pesquisar comando</label>
-        <input id="command-search" data-command-search type="search" placeholder="go to projects, open GitHub..." autocomplete="off" spellcheck="false">
-        <kbd>esc</kbd>
-      </div>
-      <p id="command-title" class="command-caption">commands</p>
-      <div class="command-list" data-command-list>
-        <button type="button" data-command-action="terminal" data-keywords="terminal shell command"><span>Open terminal</span><kbd>ctrl `</kbd></button>
-        <button type="button" data-command-target="#projects" data-keywords="projects repositories work"><span>Go to projects</span><kbd>02</kbd></button>
-        <button type="button" data-command-target="#stack" data-keywords="stack skills technologies"><span>Go to stack</span><kbd>03</kbd></button>
-        <button type="button" data-command-target="#contact" data-keywords="contact email hire"><span>Go to contact</span><kbd>05</kbd></button>
-        <a href="https://github.com/PietroTamanini" target="_blank" rel="me noopener noreferrer" data-keywords="github profile repositories"><span>Open GitHub</span><kbd>↗</kbd></a>
-        <a href="https://www.linkedin.com/in/pietrotamanini/" target="_blank" rel="me noopener noreferrer" data-keywords="linkedin profile network"><span>Open LinkedIn</span><kbd>↗</kbd></a>
-      </div>
-      <p class="command-empty" data-command-empty hidden>no command found</p>
-    </div>
-  </div>
-
   <div class="toast" role="status" aria-live="polite"></div>
-  <script src="assets/js/main.js?v=20260718-interactive" defer></script>
+  <script src="assets/js/main.js?v=20260718-cv" defer></script>
 </body>
 </html>
