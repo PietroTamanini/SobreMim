@@ -5,47 +5,47 @@ pietro@dev:~$ whoami
 Backend Developer · Python · PHP · Flask · REST APIs · MySQL · Docker · Linux
 ```
 
-Desenvolvo sistemas web, APIs e automações com foco em regras de negócio, bancos de dados, segurança, testes e implantação.
+I develop web systems, APIs, and automation solutions with a focus on business logic, databases, security, testing, and deployment.
 
-[Portfólio](https://pietro.tamanini.dev.br/) · [LinkedIn](https://www.linkedin.com/in/pietrotamanini/) · [E-mail](mailto:pietro@tamanini.dev.br)
+[Portfolio](https://pietro.tamanini.dev.br/) · [LinkedIn](https://www.linkedin.com/in/pietrotamanini/) · [Email](mailto:pietro@tamanini.dev.br)
 
 ## `projects/`
 
 ### [JusTraduz](https://github.com/TeamGHCP/JusTraduz)
 
-Plataforma jurídica desenvolvida em equipe para análise de documentos, gestão de casos, comunicação entre usuários, consulta processual e integração de pagamentos.
+Legal platform developed as a team project for document analysis, case management, user communication, court case lookup, and payment integration.
 
 ```text
 PHP · MySQL · JavaScript · Docker · APIs · Asaas
 ```
 
-Atuação em backend, integrações, banco de dados, segurança, infraestrutura e evolução do produto.
+Worked on backend development, integrations, databases, security, infrastructure, and product evolution.
 
-- autenticação e controle de acesso por perfis;
-- auditoria, proteção CSRF, rate limiting e armazenamento privado;
-- processamento de documentos e filas de execução;
-- pagamentos, cobranças e fluxos administrativos;
-- ambiente Docker, testes e documentação operacional.
+* authentication and role-based access control;
+* auditing, CSRF protection, rate limiting, and private file storage;
+* document processing and execution queues;
+* payments, billing, and administrative workflows;
+* Docker environment, testing, and operational documentation.
 
-> 1º lugar na apresentação da Situação de Aprendizagem de Software do SENAI/SC.
+> 1st place in the SENAI/SC Software Learning Project presentation.
 
 ### [Zokyo](https://github.com/PietroTamanini/Zokyo)
 
-Sistema de gestão para assistências técnicas com ordens de serviço, clientes, estoque, financeiro, laudos, relatórios e portal do cliente.
+Management system for technical support and repair businesses, featuring service orders, customers, inventory, finance, technical reports, analytics, and a customer portal.
 
 ```text
 Python · Flask · SQLAlchemy · MariaDB · Docker · Pytest · Playwright
 ```
 
-- arquitetura modular com blueprints e camada de serviços;
-- modelagem relacional e migrations com Alembic;
-- autenticação, RBAC, 2FA e auditoria;
-- testes unitários e end-to-end;
-- Gunicorn, Nginx, Docker Compose e health checks.
+* modular architecture using blueprints and a service layer;
+* relational database modeling and migrations with Alembic;
+* authentication, RBAC, 2FA, and auditing;
+* unit and end-to-end testing;
+* Gunicorn, Nginx, Docker Compose, and health checks.
 
-### [API Consulta OAB/CNA](https://github.com/PietroTamanini/API-consulta-OAB)
+### [OAB/CNA Lookup API](https://github.com/PietroTamanini/API-consulta-OAB)
 
-Integração entre interface PHP e API Flask para consulta automatizada de registros públicos, com cache e persistência em MySQL.
+Integration between a PHP interface and a Flask API for automated lookup of public records, with caching and MySQL persistence.
 
 ```text
 Python · Flask · PHP · Playwright · MySQL · REST API
@@ -59,7 +59,7 @@ backend:
   - PHP
   - Flask
   - REST APIs
-  - autenticação
+  - authentication
   - RBAC
 
 data:
@@ -86,20 +86,20 @@ security:
   - CSRF
   - rate limiting
   - 2FA
-  - auditoria
-  - gestão de segredos
+  - auditing
+  - secrets management
 ```
 
 ## `git log`
 
 ```text
-7480422  1º lugar — Situação de Aprendizagem de Software, SENAI/SC
-main     Análise e Desenvolvimento de Sistemas — SENAI/SC
-HEAD     Backend, arquitetura, testes, segurança e Linux
+7480422  1st place — Software Learning Project, SENAI/SC
+main     Systems Analysis and Development — SENAI/SC
+HEAD     Backend, architecture, testing, security, and Linux
 ```
 
 ```console
 pietro@dev:~$ ./contact.sh
 email     pietro@tamanini.dev.br
-location  Joinville, Santa Catarina
+location  Joinville, Santa Catarina, Brazil
 ```
